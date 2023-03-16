@@ -1,0 +1,143 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin-top: 40px;
+
+  svg {
+    width: auto;
+  }
+
+  :global {
+    .ant-menu-item {
+      color: #ffffff;
+      font-size: 21px;
+      :hover {
+        color: #ffffff;
+      }
+    }
+    .ant-menu-item:hover::after {
+      border: none;
+    }
+    .ant-menu-item::after {
+      display: none;
+    }
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+      color: #ffffff;
+      font-weight: 900;
+    }
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after {
+      border: none;
+    }
+  }
+}
+
+.navMenu {
+  min-width: 300px;
+  background-color: transparent;
+  font-family: "Zen Kurenaido";
+  border: none;
+}
+
+.btnLogin {
+  border: 1px solid #ffffff;
+  width: 118px;
+  height: 40px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:global(.ant-btn-primary:not(:disabled):hover) {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.btnBurgerMenu {
+  &:global(.ant-btn) {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.dFlex {
+  display: flex;
+}
+
+.drawer {
+  &:global(.ant-drawer-content) {
+    background: linear-gradient(45deg, black, green);
+  }
+  :global {
+    .ant-drawer-body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.sidebarMenu {
+  background-color: transparent;
+  font-family: "Zen Kurenaido";
+  border: none;
+  border-inline-end: none !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+  &:global(
+      .ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-selected::after
+    ) {
+    display: none;
+  }
+  &:global(.ant-menu-vertical > .ant-menu-item) {
+    font-size: 27px;
+    color: #ffffff;
+    background-color: transparent;
+    margin-bottom: 15px;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &:global(.ant-menu-light .ant-menu-item-selected) {
+    font-weight: 900;
+  }
+  &:global(
+      .ant-menu-light
+        .ant-menu-item:hover:not(.ant-menu-item-selected):not(
+          .ant-menu-submenu-selected
+        )
+    ) {
+    background-color: transparent;
+    color: #ffffff;
+  }
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 679px) {
+  .btnLogin {
+    margin: auto;
+    width: 200px;
+  }
+}
+
+@media (max-width: 901px) {
+  .header {
+    &:global(.ant-layout-header) {
+      padding-inline: 20px;
+    }
+  }
+}
