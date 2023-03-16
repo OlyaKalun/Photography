@@ -6,8 +6,6 @@ import React from "react";
 import { LayoutProps } from "./types";
 import { Header } from "./header/header";
 
-import { theme } from "antd";
-
 const { Content } = AntLayout;
 
 export const Layout = (props: LayoutProps) => {
