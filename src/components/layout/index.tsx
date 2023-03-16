@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/home.module.css";
+import styles from "@/styles/main.module.css";
 
 import { ConfigProvider, Layout as AntLayout } from "antd";
 import React from "react";
