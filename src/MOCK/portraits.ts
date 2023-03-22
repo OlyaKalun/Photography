@@ -1,8 +1,8 @@
-import woman1 from "./woman-1.jpg";
-import woman2 from "./woman-2.jpg";
-import woman3 from "./woman-3.jpg";
-import woman4 from "./woman-4.jpg";
-import woman5 from "./woman-5.jpg";
+import woman1 from "./woman-1.webp";
+import woman2 from "./woman-2.webp";
+import woman3 from "./woman-3.webp";
+import woman4 from "./woman-4.webp";
+import woman5 from "./woman-5.webp";
 
 export const portraits = [
   { id: 1, img: woman4 },

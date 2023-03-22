@@ -9,6 +9,7 @@ import type { TabsProps } from "antd";
 import { SwiperSlide } from "swiper/react";
 import { SliderEffectCoverflow } from "@/components/slider";
 import { natures, portraits, travells } from "@/MOCK";
+import { HeadMetaTags } from "@/components/head-meta-tags/head-meta-tags";
 
 const { Title } = Typography;
 const items: TabsProps["items"] = [
@@ -73,27 +74,33 @@ const items: TabsProps["items"] = [
 
 const Home = () => {
   return (
-    <Layout>
-      <div className={styles.homeContainer}>
-        <Button
-          shape="circle"
-          icon={<PlayCircleIcon />}
-          className={styles.btnPlayCircle}
-        />
-        <Title className={styles.homeTitle}>OPhotography Studio</Title>
-        <div className={styles.dCenter}>
-          <div className={styles.inputWrapper}>
-            <SearchIcon />
-            <Input placeholder="Search" rootClassName={styles.inputSearch} />
+    <>
+      <HeadMetaTags
+        metaTitle="OPhotography"
+        metaDescription="【OPhotography】- is a photographer who will save your moments correctly and provide quality services."
+      />
+      <Layout>
+        <div className={styles.homeContainer}>
+          <Button
+            shape="circle"
+            icon={<PlayCircleIcon />}
+            className={styles.btnPlayCircle}
+          />
+          <Title className={styles.homeTitle}>OPhotography Studio</Title>
+          <div className={styles.dCenter}>
+            <div className={styles.inputWrapper}>
+              <SearchIcon />
+              <Input placeholder="Search" rootClassName={styles.inputSearch} />
+            </div>
           </div>
+          <Tabs
+            defaultActiveKey="1"
+            items={items}
+            rootClassName={styles.tabsWrapper}
+          />
         </div>
-        <Tabs
-          defaultActiveKey="1"
-          items={items}
-          rootClassName={styles.tabsWrapper}
-        />
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

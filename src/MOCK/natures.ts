@@ -1,8 +1,8 @@
-import nature1 from "./nature-1.jpg";
-import nature2 from "./nature-2.jpg";
-import nature3 from "./nature-3.jpg";
-import nature4 from "./nature-4.jpg";
-import nature5 from "./nature-5.jpg";
+import nature1 from "./nature-1.webp";
+import nature2 from "./nature-2.webp";
+import nature3 from "./nature-3.webp";
+import nature4 from "./nature-4.webp";
+import nature5 from "./nature-5.webp";
 
 export const natures = [
   { id: 1, img: nature5 },
