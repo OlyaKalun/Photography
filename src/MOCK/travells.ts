@@ -1,8 +1,8 @@
-import trevell1 from "./trevell-1.jpg";
-import trevell2 from "./trevell-2.jpg";
-import trevell3 from "./trevell-3.jpg";
-import trevell4 from "./trevell-4.jpg";
-import trevell5 from "./trevell-5.jpg";
+import trevell1 from "./trevell-1.webp";
+import trevell2 from "./trevell-2.webp";
+import trevell3 from "./trevell-3.webp";
+import trevell4 from "./trevell-4.webp";
+import trevell5 from "./trevell-5.webp";
 
 export const travells = [
   { id: 1, img: trevell5 },
