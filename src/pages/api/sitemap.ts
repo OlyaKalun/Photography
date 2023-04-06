@@ -9,7 +9,7 @@ interface Response {
 }
 
 export default function handler(req: unknown, res: Response) {
-  const BASE_URL = "http://localhost:3000";
+  const BASE_URL = "https://photography-nine-gamma.vercel.app";
 
   const staticPaths = fs
     .readdirSync(path.resolve(process.cwd(), "src/pages"))
