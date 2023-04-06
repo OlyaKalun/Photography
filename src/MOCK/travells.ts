@@ -5,9 +5,38 @@ import trevell4 from "./trevell-4.webp";
 import trevell5 from "./trevell-5.webp";
 
 export const travells = [
-  { id: 1, img: trevell5 },
-  { id: 2, img: trevell4 },
-  { id: 3, img: trevell3 },
-  { id: 4, img: trevell2 },
-  { id: 5, img: trevell1 },
+  {
+    id: 1,
+    img: trevell5,
+    tags: ["travell", "nature", "river", "rocks", "bridge", "sunset"],
+  },
+  {
+    id: 2,
+    img: trevell4,
+    tags: [
+      "travell",
+      "nature",
+      "trees",
+      "sea",
+      "ocean",
+      "beach",
+      "sky",
+      "palm",
+    ],
+  },
+  {
+    id: 3,
+    img: trevell3,
+    tags: ["travell", "nature", "trees", "sea", "ocean", "beach"],
+  },
+  {
+    id: 4,
+    img: trevell2,
+    tags: ["travell", "nature", "trees", "sea", "ocean", "heart", "beach"],
+  },
+  {
+    id: 5,
+    img: trevell1,
+    tags: ["travell", "nature", "mountain", "forest", "sky", "trees"],
+  },
 ];
