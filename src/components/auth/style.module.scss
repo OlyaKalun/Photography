@@ -1,0 +1,78 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  :global {
+    .ant-btn-default {
+      margin-top: 30px;
+      background: linear-gradient(45deg, #2a4112, #030a0a);
+      color: #ffffff;
+      height: 40px;
+      padding: 0px 68px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.inputWrapper {
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  text-align: left;
+  width: 100%;
+  margin-top: 3px;
+  padding-left: 3px;
+}
+
+.dividerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px 0px 0px;
+
+  :global .ant-divider-horizontal {
+    max-width: 196px;
+    min-width: unset;
+    margin: 0px;
+    border-color: #d9d9d9;
+  }
+}
+
+.googleBtn {
+  :global {
+    .ant-btn-default {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0px 17px;
+      margin-top: 25px;
+      font-weight: 500;
+      color: #ffffff;
+      background: linear-gradient(45deg, black, green);
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  svg {
+    width: 32px;
+    margin-right: 7px;
+  }
+}
+
+.labelWrapper {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  color: #000000b8;
+  font-size: 16px;
+}
