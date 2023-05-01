@@ -260,6 +260,7 @@
   background-image: url(../assets/images/home2-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .container {
