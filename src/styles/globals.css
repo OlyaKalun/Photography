@@ -111,4 +111,12 @@ a {
   color:#ffffff
 }
 
+html, body, #__next, .main_container__gF1sU{
+  height: 100%
+}
+
+.main_container__gF1sU{
+  color: #ffffff
+}
+
 @import url("../assets/fonts/fonts.css");
